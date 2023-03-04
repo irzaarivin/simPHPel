@@ -3,7 +3,7 @@
 
 <br><br>
 
-SEBELUM MENJALANKAN PROGRAM :
+<h3>SEBELUM MENJALANKAN PROGRAM :</h3>
 1. Import file coba.sql ke dalam phpmyadmin
 2. Pastikan anda mengekstrak simPHPel.zip di dalam folder project anda yang berada di dalam folder htdocs
 3. Buka folder "brain", kemudian edit file Config.php
@@ -15,18 +15,23 @@ SEBELUM MENJALANKAN PROGRAM :
 9. Atau jika anda ingin menggunakan Magic Method CRUD ini di dalam file php anda yang lain, ikuti langkah 7 & 8
 10. File yang telah anda sisipkan script include('bridge.php'); telah siap untuk anda gunakan semua methodnya
 
-PERSYARATAN PROGRAM :
+<br><br>
+
+<h3>PERSYARATAN PROGRAM :</h3>
 1. Minimal php versi 8.0.0
 2. Database MySQL atau MariaDB
 
-DOKUMENTASI PROGRAM :
-Program ini sangat berkaitan dengan database. Ia berasumsi jika semua table yang telah anda buat memiliki PRIMARY KEY dengan nama "id" dan memiliki atribut AUTO_INCREMENT.
-Semua method bersifat static, sehingga anda bisa memanggil method tersebut tanpa harus menginisialisasikan objek.
+<br><br>
 
-CARA PENGGUNAAN :
+<h3>DOKUMENTASI PROGRAM :</h3>
+<p>Program ini sangat berkaitan dengan database. Ia berasumsi jika semua table yang telah anda buat memiliki PRIMARY KEY dengan nama "id" dan memiliki atribut AUTO_INCREMENT. Semua method bersifat static, sehingga anda bisa memanggil method tersebut tanpa harus menginisialisasikan objek.</p>
+
+<br><br>
+
+<h3>CARA PENGGUNAAN :</h3>
 NamaClass::method(parameter); => Database::all(nama_table); atau Auth::register(nama_table);
 
-DOKUMENTASI METHOD PADA CLASS Database :
+<h3>DOKUMENTASI METHOD PADA CLASS Database :</h3>
 1. tables() => untuk melihat semua table yang telah dibuat => "SHOW TABLES"
 2. all("nama_table") => untuk mengambil semua data di dalam table => "SELECT * FROM nama_table"
 3. find("nama_table", id) => untuk mencari data tertentu pada suatu table berdasarkan id => "SELECT * FROM nama_table WHERE id = id"
@@ -41,7 +46,9 @@ DOKUMENTASI METHOD PADA CLASS Database :
 12. rightJoin("table1", "table2", "kolom_table1", "kolom_table2") => untuk melakukan fungsi RIGHT OUTER JOIN => "SELECT * FROM table1 RIGHT JOIN table2 ON table1.kolom_table1 = table2.kolom_table2"
 13. fullJoin("table1", "table2", "kolom_table1", "kolom_table2") => untuk melakukan fungsi FULL OUTER JOIN => "SELECT * FROM table1 LEFT OUTER JOIN table2 ON table1.kolom_table1 = table2.kolom_table2 UNION SELECT * FROM table1 RIGHT OUTER JOIN table2 ON table1.kolom_table1 = table2.kolom_table2"
 
-DOKUMENTASI METHOD PADA CLASS Auth :
+<br><br>
+
+<h3>DOKUMENTASI METHOD PADA CLASS Auth :</h3>
 1. register("nama_table") => untuk mendaftarkan user baru, data password akan otomatis di hash.
 2. login("nama_table", "keyword") => untuk melakukan proses Autentikasi dengan mencari data berdasarkan keyword/field tertentu.
 3. logout("url") => untuk melakukan proses Logging Out User dan otomatis redirect ke url tertentu
