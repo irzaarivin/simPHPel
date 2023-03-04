@@ -21,7 +21,7 @@
 
 <br>
 
-2. File `index.php` :
+2. Edit file `index.php` :
 
 ```php
 <?php
@@ -57,7 +57,7 @@ $result = Database::all("coba");
 
 <br>
 
-3. File `brain/Config.php` :
+3. Edit file `brain/Config.php` untuk mengganti nama database anda :
 
 ```php
 <?php
