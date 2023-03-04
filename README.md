@@ -142,7 +142,7 @@ SELECT * FROM nama_table WHERE key option 'value';
 <h2>6. create("nama_table")</h2>
 
 ```php
-Dayabase::create("nama_table");
+Database::create("nama_table");
 ```
 
 Method ini digunakan untuk menambahkan data. untuk menggunakan method ini, pastikan value dari atribut tag input anda sama dengan nama field pada database anda.
