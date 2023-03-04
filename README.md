@@ -1,5 +1,84 @@
-<h1>SimPHPel</h1>
+# SimPHPel #
 <h3>Adalah sebuah Libray PHP untuk melakukan CRUD (Create, Read, Update, Delete). Library ini dikhususkan untuk memudahkan programmer pemula yang baru belajar PHP dasar & OOP (Object Oriented Programming)</h3>
+
+<br><br>
+
+<h1>Getting Started</h1>
+<br>
+
+1. Struktur File :
+
+```
+* SimPHPel
+  + brain
+      + core
+          - Database.php
+          - Auth.php
+      - Config.php
+  - bridge.php
+  - index.php
+```
+
+<br>
+
+2. File `index.php` :
+
+```php
+<?php
+
+include('bridge.php');
+
+$result = Database::all("coba");
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimPHPel</title>
+</head>
+
+<body>
+
+    <h1>Data Di Tabel "Coba" :</h1>
+    <?php foreach ($result as $data) : ?>
+
+        <p><?= $data['name']; ?> | <?= $data['email']; ?></p><br>
+
+    <?php endforeach; ?>
+
+</body>
+
+</html>
+```
+
+<br>
+
+3. File `brain/Config.php` :
+
+```php
+<?php
+
+class Config {
+
+    // UBAH SERVER, USERNAME, PASSWORD, DAN DATABASE DARI MYSQLNYA DI PROPERTIES INI
+    private static $db_server = "localhost";
+    private static $db_user = "root";
+    private static $db_password = "";
+    private static $db_name = "nama_database_anda";
+
+    protected static function connect() {
+        $conn = mysqli_connect(self::$db_server, self::$db_user, self::$db_password, self::$db_name);
+        return $conn;
+    }
+
+}
+
+?>
+```
 
 <br><br>
 
