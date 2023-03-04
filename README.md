@@ -28,7 +28,18 @@
 
 include('bridge.php');
 
+// Mendapatkan seluruh data di table "coba"
 $result = Database::all("coba");
+
+// Meregister user baru
+$register = Auth::register("coba");
+
+if($register) {
+    echo "<script>
+        alert('Ok');
+        document.location.href = 'http://localhost:8080/simPHPel/';
+    </script>";
+}
 
 ?>
 <!DOCTYPE html>
@@ -49,6 +60,16 @@ $result = Database::all("coba");
         <p><?= $data['name']; ?> | <?= $data['email']; ?></p><br>
 
     <?php endforeach; ?>
+    
+    <br><br>
+    
+    <h1>Tambah Data Tabel "Coba" :</h1>
+    <form action="" method="POST">
+        <input type="text" name="name" required>
+        <input type="text" name="email" required>
+        <input type="password" name="password" required>
+        <button type="submit">Kirim</button>
+    </form>
 
 </body>
 
