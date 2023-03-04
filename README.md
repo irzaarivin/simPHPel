@@ -6,7 +6,7 @@
 <h1>Getting Started</h1>
 <br>
 
-1. Struktur File :
+1. Setelah anda mengekstrak file SimPHPel.zip, maka seharusnya anda mendapatkan struktur file seperti ini:
 
 ```
 * SimPHPel
