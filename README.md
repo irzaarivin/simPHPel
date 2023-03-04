@@ -160,7 +160,7 @@ Method ini digunakan untuk melihat semua table yang telah dibuat. Method tersebu
 SHOW TABLES;
 ```
 
-<br><br>
+<br>
 
 <h2>2. all("nama_table")</h2>
 
@@ -174,7 +174,7 @@ Method ini digunakan untuk mengambil semua data di dalam table. Method tersebut 
 SELECT * FROM nama_table
 ```
 
-<br><br>
+<br>
 
 <h2>3. find("nama_table", id)</h2>
 
@@ -188,7 +188,7 @@ Method ini digunakan untuk mencari data tertentu pada suatu table berdasarkan id
 SELECT * FROM nama_table WHERE id = 'id';
 ```
 
-<br><br>
+<br>
 
 <h2>4. get("nama_table", "key", "value")</h2>
 
@@ -202,7 +202,7 @@ Method ini digunakan untuk mencari data tertentu pada suatu table dengan value w
 SELECT * FROM nama_table WHERE key = 'value';
 ```
 
-<br><br>
+<br>
 
 <h2>5. getOpt("nama_table", "key", "option", "value")</h2>
 
@@ -216,7 +216,7 @@ Method ini digunakan untuk mencari data tertentu pada suatu table dengan where c
 SELECT * FROM nama_table WHERE key option 'value';
 ```
 
-<br><br>
+<br>
 
 <h2>6. create("nama_table")</h2>
 
@@ -226,7 +226,7 @@ Database::create("nama_table");
 
 Method ini digunakan untuk menambahkan data. untuk menggunakan method ini, pastikan value dari atribut tag input anda sama dengan nama field pada database anda.
 
-<br><br>
+<br>
 
 <h2>7. update("nama_table", "id")</h2>
 
@@ -236,7 +236,7 @@ Database::update("nama_table", "id");
 
 Method ini digunakan untuk mengupdate data. untuk menggunakan method ini, pastikan value dari atribut tag input anda sama dengan nama field pada database anda.
 
-<br><br>
+<br>
 
 <h2>8. delete("nama_table", "id")</h2>
 
@@ -250,7 +250,7 @@ Method ini digunakan untuk menghapus data dari table tertentu dengan id. Method 
 DELETE FROM nama_table WHERE id = 'id';
 ```
 
-<br><br>
+<br>
 
 <h2>9. deleteOpt("nama_table", "key", "option", "value")</h2>
 
@@ -264,7 +264,7 @@ Method ini digunakan untuk menghapus data dari table tertentu dengan where claus
 DELETE FROM nama_table WHERE key option 'value';
 ```
 
-<br><br>
+<br>
 
 <h2>10. innerJoin("table1", "table2", "kolom_table1", "kolom_table2")</h2>
 
@@ -278,7 +278,7 @@ Method ini digunakan untuk melakukan fungsi INNER JOIN. Method ini akan menghasi
 SELECT * FROM table1 INNER JOIN table2 ON table1.kolom_table1 = table2.kolom_table2;
 ```
 
-<br><br>
+<br>
 
 <h2>11. leftJoin("table1", "table2", "kolom_table1", "kolom_table2")</h2>
 
@@ -292,7 +292,7 @@ Method ini digunakan untuk melakukan fungsi LEFT OUTER JOIN. Method ini akan men
 SELECT * FROM table1 LEFT JOIN table2 ON table1.kolom_table1 = table2.kolom_table2;
 ```
 
-<br><br>
+<br>
 
 <h2>12. rightJoin("table1", "table2", "kolom_table1", "kolom_table2")</h2>
 
@@ -306,7 +306,7 @@ Method ini digunakan untuk melakukan fungsi RIGHT OUTER JOIN. Method ini akan me
 SELECT * FROM table1 RIGHT JOIN table2 ON table1.kolom_table1 = table2.kolom_table2;
 ```
 
-<br><br>
+<br>
 
 <h2>13. fullJoin("table1", "table2", "kolom_table1", "kolom_table2")</h2>
 
@@ -334,7 +334,7 @@ Auth::register("nama_table");
 
 Method ini digunakan untuk mendaftarkan user baru, data password akan otomatis di hash.
 
-<br><br>
+<br>
 
 <h2>2. login("nama_table", "keyword")</h2>
 
@@ -344,7 +344,7 @@ Auth::login("nama_table", "keyword");
 
 Method ini digunakan untuk melakukan proses Autentikasi dengan mencari data berdasarkan keyword/field tertentu.
 
-<br><br>
+<br>
 
 <h2>3. logout("url")</h2>
 
