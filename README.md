@@ -1,5 +1,7 @@
 <h1>SimPHPel</h1>
-<h3>Adalah sebuah Libray PHO untuk melakukan CRUD (Create, Read, Update, Delete). Library ini dikhususkan untuk memudahkan programmer pemula yang baru belajar PHP dasar & OOP (Object Oriented Programming)</h3>
+<h3>Adalah sebuah Libray PHP untuk melakukan CRUD (Create, Read, Update, Delete). Library ini dikhususkan untuk memudahkan programmer pemula yang baru belajar PHP dasar & OOP (Object Oriented Programming)</h3>
+
+<br><br>
 
 SEBELUM MENJALANKAN PROGRAM :
 1. Import file coba.sql ke dalam phpmyadmin
