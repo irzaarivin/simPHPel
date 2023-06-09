@@ -1,5 +1,5 @@
 # SimPHPel #
-<h3>Adalah sebuah Libray PHP untuk melakukan CRUD (Create, Read, Update, Delete). Library ini dikhususkan untuk memudahkan programmer pemula yang baru belajar PHP dasar & OOP (Object Oriented Programming)</h3>
+<h3>Adalah sebuah Libray PHP untuk melakukan CRUD (Create, Read, Update, Delete). Library ini dikhususkan untuk memudahkan programmer pemula yang baru belajar PHP dasar & OOP (Object Oriented Programming)(Object Oriented Programming)</h3>
 
 <br><br>
 
